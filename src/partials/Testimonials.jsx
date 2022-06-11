@@ -95,7 +95,7 @@ function Testimonials() {
 									“ The aim of <strong>TITAN</strong> is to have a safe and toxic free community “
 								</blockquote>
 								<cite className="block font-bold text-lg not-italic mb-1">Zahin</cite>
-								<div className="text-gray-600">
+								<div className="text-gray-600 mb-2">
 									<span>CEO & Founder</span>
 								</div>
 							</div>
