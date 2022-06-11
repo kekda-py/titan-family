@@ -26,3 +26,31 @@
 // AOS styles
 $aos-distance: 10px;
 @import 'node_modules/aos/src/sass/aos.scss';
+
+.yay {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 6px;
+        width: 0;
+        background: linear-gradient(to right, var(--tw-gradient-stops));
+        z-index: -1;
+        transition: all 200ms ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+}
+
+.team {
+    div {
+        min-height: 12rem;
+    }
+}
