@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TestimonialImage from '../images/testimonial.jpg';
+import Team from '../utils/Team';
 
 function Testimonials() {
 	return (
@@ -37,46 +38,50 @@ function Testimonials() {
 
 					<div className="max-w-sm team mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
 
-						{/* 1st item */}
-						<div className="relative flex flex-col items-center p-6 bg-white rounded drop-shadow-2xl">
+						<Team
+							name="Zahin"
+							dsc={(<>
+								The <strong>Founder</strong> of the community and <strong>Club President</strong>
+							</>)}
+							id="700010909833232596"
+							image="https://cdn.discordapp.com/avatars/700010909833232596/a_5901ecf67cdf44f4623ff7ec83b6b912.gif"
+						/>
 
-							<img src="https://cdn.discordapp.com/avatars/700010909833232596/a_5901ecf67cdf44f4623ff7ec83b6b912.gif" className='w-16 h-16 rounded-full -mt-1 mb-2' />
-							<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Zahin</h4>
-							<p className="text-gray-600 text-center">The <strong>Founder</strong> of the community and <strong>Club President</strong></p>
-						</div>
-
-						<div className="relative flex flex-col items-center p-6 bg-white rounded drop-shadow-2xl">
-							<img src="https://cdn.discordapp.com/avatars/698036203651334154/2eee7a1d6f72d348e4369108f7285ebe.webp" className='w-16 h-16 rounded-full -mt-1 mb-2' />
-							<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Nimbu</h4>
-							<p className="text-gray-600 text-center">
+						<Team
+							name="Nimbu"
+							dsc={(<>
 								<strong>Server Manager</strong>
-							</p>
-						</div>
+							</>)}
+							id="698036203651334154"
+							image="https://cdn.discordapp.com/avatars/698036203651334154/2eee7a1d6f72d348e4369108f7285ebe.webp"
+						/>
 
-						<div className="relative flex flex-col items-center p-6 bg-white rounded drop-shadow-2xl">
-							<img src="https://cdn.discordapp.com/avatars/767201190093127741/2224119d1c15fbd6fc520b7458456506.webp" className='w-16 h-16 rounded-full -mt-1 mb-2' />
-							<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Muru</h4>
-							<p className="text-gray-600 text-center">
+						<Team
+							name="Muru"
+							dsc={(<>
 								<strong>Server Manager</strong>
-							</p>
-						</div>
+							</>)}
+							id="767201190093127741"
+							image="https://cdn.discordapp.com/avatars/767201190093127741/2224119d1c15fbd6fc520b7458456506.webp"
+						/>
 
-						<div className="relative flex flex-col items-center p-6 bg-white rounded drop-shadow-2xl">
-							<img src="https://cdn.discordapp.com/avatars/748129499547303948/a55a3142aa650086cd37167c7f96e14f.webp" className='w-16 h-16 rounded-full -mt-1 mb-2' />
-							<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Ludo Girl</h4>
-							<p className="text-gray-600 text-center">
+						<Team
+							name="Ludo Girl"
+							dsc={(<>
 								<strong>Server Manager</strong> and <strong>Club President</strong>
-							</p>
-						</div>
+							</>)}
+							id="748129499547303948"
+							image="https://cdn.discordapp.com/avatars/748129499547303948/a55a3142aa650086cd37167c7f96e14f.webp"
+						/>
 
-						<div className="relative flex flex-col items-center p-6 bg-white rounded drop-shadow-2xl">
-							<img src="https://cdn.discordapp.com/avatars/753845980507537478/07179f7bf9dd20f23d715a587fcf298d.webp" className='w-16 h-16 rounded-full -mt-1 mb-2' />
-							<h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Yash</h4>
-							<p className="text-gray-600 text-center">
-								<strong>Server Manager</strong> and <strong>Da Developer</strong>
-							</p>
-						</div>
-
+						<Team
+							name="Yash"
+							dsc={(<>
+								<strong>Server Manager</strong> and <strong>The Developer</strong>
+							</>)}
+							id="753845980507537478"
+							image="https://cdn.discordapp.com/avatars/753845980507537478/07179f7bf9dd20f23d715a587fcf298d.webp"
+						/>
 
 					</div>
 
