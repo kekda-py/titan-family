@@ -47,10 +47,12 @@ function Newsletter() {
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row sm:justify-start gap-2 justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <a className="btn cursor-pointer appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm text-white placeholder-gray-500" aria-label="Join discord" >
+                    <a href='/discord' target='_blank' className="btn cursor-pointer appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm text-white placeholder-gray-500">
                       Join discord
                     </a>
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="#0">Subscribe</a>
+                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="/club" target='_blank'>
+                      Club
+                    </a>
                   </div>
                 </form>
               </div>
