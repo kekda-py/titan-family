@@ -24,25 +24,25 @@ function Features() {
             </p>
           </div>
 
-            <Transition
-                  show={true}
-                  appear={true}
-                  className="w-full relative flex items-center justify-center"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="flex justify-center">
-                    <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
-                  </div>
-                </Transition>
-
-          </div >
+          <Transition
+            show={true}
+            appear={true}
+            className="w-full relative flex items-center justify-center"
+            enter="transition ease-in-out duration-700 transform order-first"
+            enterStart="opacity-0 translate-y-16"
+            enterEnd="opacity-100 translate-y-0"
+            leave="transition ease-in-out duration-300 transform absolute"
+            leaveStart="opacity-100 translate-y-0"
+            leaveEnd="opacity-0 -translate-y-16"
+          >
+            <div className="flex justify-center">
+              <img className="md:max-w-none mx-auto rounded" src="https://cdn.discordapp.com/attachments/930721089234010162/985100217592463390/unknown.png" width="500" height="462" alt="Features bg" />
+            </div>
+          </Transition>
 
         </div >
+
+      </div >
     </section >
   );
 }
