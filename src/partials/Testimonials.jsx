@@ -92,7 +92,7 @@ function Testimonials() {
 									<img className="relative rounded-full" src="https://cdn.discordapp.com/attachments/967731357570711612/985101628610838538/unknown.png" width="96" height="96" alt="Testimonial 01" />
 								</div>
 								<blockquote className="text-xl font-medium mb-4 mx-auto">
-									“ The aim of <strong>TITAN</strong> is to have a safe and toxic free community “
+									“ I have this vision of creating a ground for people where there is no toxicity. Titan aims to have a toxic-free community because closing the door to toxicity is the most effective way to make space for new opportunities. “
 								</blockquote>
 								<cite className="block font-bold text-lg not-italic mb-1">Zahin</cite>
 								<div className="text-gray-600 mb-2">
