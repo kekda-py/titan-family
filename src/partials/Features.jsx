@@ -18,7 +18,7 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Earn moni while chatting</h1>
+            <h1 className="h2 mb-4">Earn money while chatting</h1>
             <p className="sm:text-xl text-lg text-gray-600">
               The more you chat, the more (mimu currency) you earn. Also from time to time, ❄ are dropped. In order to claim them, type <strong>.pick</strong> when they are dropped... You can also buy roles with the currency.
             </p>
