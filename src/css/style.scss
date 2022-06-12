@@ -54,3 +54,18 @@ $aos-distance: 10px;
         min-height: 12rem;
     }
 }
+
+.play-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transform: translate(-12px,12px);
+    background: white;
+    border-radius: 50%;
+}

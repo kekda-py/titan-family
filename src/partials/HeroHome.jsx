@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Modal from '../utils/Modal';
 
 import HeroImage from '../images/hero-image.png';
@@ -6,6 +6,8 @@ import HeroImage from '../images/hero-image.png';
 function HeroHome() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const vesio = useRef(null);
+  const bhutan = useRef(null);
 
   return (
     <section className="relative">
@@ -54,9 +56,35 @@ function HeroHome() {
           <div>
             <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
               <div className="flex flex-col justify-center">
-                <video className="mx-auto" autoPlay={true} alt="Hero" >
+                <video ref={vesio} onCanPlay={() => {
+                  if (vesio.current.play) vesio.current.play()
+                }} className="mx-auto" id='the-video'>
                   <source src="https://drive.google.com/uc?export=view&id=1gtg5aa8GyqfNet6jy4RyLpPIoUNd62xr" type='video/mp4' />
                 </video>
+                <button 
+                  className='absolute play-button'
+                  onClick={() => {
+                    if (vesio.current.paused) {
+                      vesio.current.play();
+                      bhutan.current.innerHTML = '<path d="M199.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8zM375.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8z"/>'
+                    } else {
+                      vesio.current.pause();
+                      bhutan.current.innerHTML = '<path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"></path>'
+                    }
+                  }}
+                >
+                  <svg 
+                    stroke="currentColor"
+                    fill="currentColor" 
+                    strokeWidth="0" 
+                    viewBox="0 0 512 512" 
+                    height="2em" width="2em" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    ref={bhutan}
+                  >
+                    <path d="M199.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8zM375.9 416h-63.8c-4.5 0-8.1-3.6-8.1-8V104c0-4.4 3.6-8 8.1-8h63.8c4.5 0 8.1 3.6 8.1 8v304c0 4.4-3.6 8-8.1 8z"/>  
+                  </svg>
+                </button>
                 {/* <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                   <defs>
                     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">
