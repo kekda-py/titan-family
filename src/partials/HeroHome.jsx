@@ -59,7 +59,7 @@ function HeroHome() {
                 <video ref={vesio} onCanPlay={() => {
                   if (vesio.current.play) vesio.current.play()
                 }} className="mx-auto" id='the-video'>
-                  {/* <source src="https://drive.google.com/uc?export=view&id=1gtg5aa8GyqfNet6jy4RyLpPIoUNd62xr" type='video/mp4' /> */}
+                  <source src="https://drive.google.com/uc?export=view&id=1gtg5aa8GyqfNet6jy4RyLpPIoUNd62xr" type='video/mp4' />
                 </video>
                 <button 
                   className='absolute play-button'

@@ -36,7 +36,7 @@ function Features() {
             leaveEnd="opacity-0 -translate-y-16"
           >
             <div className="flex justify-center">
-              <img className="md:max-w-none mx-auto rounded" src="https://cdn.discordapp.com/attachments/930721089234010162/985100217592463390/unknown.png" width="500" height="462" alt="Features bg" />
+              <img className="md:max-w-none mx-auto rounded" src="https://media.discordapp.net/attachments/967731357570711612/985216675576156201/unknown.png" width="500" height="462" alt="Features bg" />
             </div>
           </Transition>
 
