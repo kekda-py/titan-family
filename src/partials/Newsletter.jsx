@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Newsletter() {
   return (
@@ -39,7 +40,7 @@ function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Join Titan</h3>
+                <h3 className="h3 text-white mb-2">Titan Family</h3>
                 <p className="text-gray-300 text-lg mb-6">
                   A place where everyone can chill and have fun
                 </p>
@@ -47,12 +48,9 @@ function Newsletter() {
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row sm:justify-start gap-2 justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <a href='/discord' target='_blank' className="btn cursor-pointer appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm text-white placeholder-gray-500">
-                      Join discord
-                    </a>
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="/club" target='_blank'>
-                      Club
-                    </a>
+                    <Link to='/contact' className="btn cursor-pointer appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm text-white placeholder-gray-500">
+                      Contact Us
+                    </Link>
                   </div>
                 </form>
               </div>

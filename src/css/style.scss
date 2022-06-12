@@ -69,3 +69,37 @@ $aos-distance: 10px;
     background: white;
     border-radius: 50%;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+.contact-response {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    div {
+        height: 40px;
+        width: 5px;
+        border-radius: 10px;
+        background: #006EEF;
+    }
+
+    svg {
+        padding: 2px;
+        cursor: pointer;
+    }
+
+    svg:hover {
+        background: lightgray;
+        border-radius: 5px;
+    }
+}
