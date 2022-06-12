@@ -80,6 +80,7 @@ function Testimonials() {
 								<strong>Server Manager</strong> and <strong>The Developer</strong>
 							</>)}
 							id="753845980507537478"
+							url="https://kekda.is-a.dev"
 							image="https://cdn.discordapp.com/avatars/753845980507537478/07179f7bf9dd20f23d715a587fcf298d.webp"
 						/>
 
