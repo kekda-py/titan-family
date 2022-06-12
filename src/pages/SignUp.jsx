@@ -25,8 +25,8 @@ function SignUp() {
 
               {/* Form */}
               <div className="max-w-lg mx-auto">
-                <form action="https://formsubmit.co/a6d275e1602053e03a59d4a2efe09730" method="POST">
-                  <input type="hidden" name="_next" value="http://localhost:3000/?contact=true" />
+                <form action="https://formsubmit.co/de92b4cb360d9f32971ae4f8d6a42926" method="POST">
+                  <input type="hidden" name="_next" value="https://titan-family.vercel.app/?contact=true" />
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Name <span className="text-red-600">*</span></label>
